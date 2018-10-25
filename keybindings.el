@@ -43,6 +43,14 @@
     "olt" '(org-toggle-link-display :which-key "org-toggle-link-display")
 		"oli" '(org-insert-link :which-key "org-insert-link")
 		"ols" '(org-store-link :which-key "org-store-link")
+		;; Themes
+		"Ts"  '(switch-theme :which-key "switch theme")
+		;; evaluate
+		"eb"  '(eval-buffer :which-key "eval buffer")
+		"es"  '(eval-last-sexp :which-key "eval last sexp")
+		"ef"  '(eval-defun :which-key "eval defun")
+		"er"  '(eval-region :which-key "eval region")
+		"ex"  '(eval-expression :which-key "eval expression")
       ))
 
 
@@ -76,8 +84,7 @@
 
 
 ;;; Evil
-
-(global-set-key (kbd "<tab>") 'evil-force-normal-state)
+(global-set-key (kbd "C-;") 'evil-force-normal-state)
 (global-set-key (kbd "C-u") 'evil-scroll-up)
 (evil-define-key 'normal org-mode-map "<tab>" 'org-cycle)
 ;;; keybindings.el ends here

@@ -28,10 +28,42 @@
 ;;
 
 (use-package doom-themes
-  :ensure t
-  :config
-  (load-theme 'doom-nord t))
+  :ensure t)
 
+;;; More themes
+
+(use-package zenburn-theme
+	:ensure t)
+
+(use-package gruvbox-theme
+	:ensure t)
+
+(use-package base16-theme
+	:ensure t)
+
+(use-package badwolf-theme
+	:ensure t)
+
+(use-package sunburn-theme
+	:ensure t)
+
+
+
+;; Switch Themes function
+;; from Daniel Mai:
+;; https://www.reddit.com/r/emacs/comments/30b67j/how_can_you_reset_emacs_to_the_default_theme/
+
+(defun switch-theme (theme)
+  ;; This interactive call is taken from `load-theme'
+  (interactive
+   (list
+    (intern (completing-read "Load custom theme: "
+                             (mapcar 'symbol-name
+                                     (custom-available-themes))))))
+  (mapcar #'disable-theme custom-enabled-themes)
+  (load-theme theme t))
+
+(switch-theme 'doom-nord)
 
 ;; Global settings (defaults)
 (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
