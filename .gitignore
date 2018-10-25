@@ -1,0 +1,15 @@
+# GNU Emacs
+*~
+*.elc
+*.eld
+/auto-save-list/
+/backups/
+/elpa/
+/packages/
+.abbrev_defs
+custom.el
+history
+
+
+
+
