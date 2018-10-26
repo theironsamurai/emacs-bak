@@ -14,8 +14,8 @@
 (fset 'yes-or-no-p #'y-or-n-p)
 (delete-selection-mode t)
 (transient-mark-mode t)
-(setq x-select-enable-clipboard t)
-(setq x-select-enable-primary t)
+;(setq x-select-enable-clipboard t)
+;(setq x-select-enable-primary t)
 (set-default 'tab-width 2)
 
 

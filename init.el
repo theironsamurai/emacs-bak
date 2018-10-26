@@ -8,7 +8,6 @@
 
 ;;; Code:
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; BOOTSTRAP   ;;;;;;;;;;
 ;;;;;;; use-package ;;;;;;;;;;
@@ -70,11 +69,21 @@
 ;;
 
 (load "~/.emacs.d/basic-config.el")
+;;; Package configs
+(load "~/.emacs.d/helm-config.el")
+(load "~/.emacs.d/evil-config.el")
+(load "~/.emacs.d/org-mode-config.el")
 (load "~/.emacs.d/packages-config.el")
+(load "~/.emacs.d/writing-config.el")
+;; Themes
+(load "~/.emacs.d/themes.el")
+;; Keybindings
+(load "~/.emacs.d/general-keybindings.el")
 (load "~/.emacs.d/keybindings.el")
+;; Extras
+(load "~/.emacs.d/trans.el")
 
 
 ;;; init.el ends here
-
-
+ 
 
