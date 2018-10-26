@@ -33,6 +33,9 @@
 		"ww"  '(evil-window-next :which-key "next window")
     ;; Others
     "ta"  '(ansi-term :which-key "open ansi terminal")
+    "te"  '(eshell :which-key "open eshell terminal")
+		"mlw" '(markdown-insert-wiki-link :which-key "markdown insert wiki-link")
+		"mlt" '(markdown-toggle-url-hiding :which-key "markdown toggle URL hiding")
     ;; Org-mode
     "olt" '(org-toggle-link-display :which-key "org-toggle-link-display")
 		"oli" '(org-insert-link :which-key "org-insert-link")

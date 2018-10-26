@@ -72,9 +72,9 @@
 ;;; Package configs
 (load "~/.emacs.d/helm-config.el")
 (load "~/.emacs.d/evil-config.el")
-(load "~/.emacs.d/org-mode-config.el")
 (load "~/.emacs.d/packages-config.el")
 (load "~/.emacs.d/writing-config.el")
+(load "~/.emacs.d/org-mode-config.el")
 ;; Themes
 (load "~/.emacs.d/themes.el")
 ;; Keybindings
